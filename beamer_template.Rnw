@@ -1,0 +1,53 @@
+\documentclass[8pt]{beamer}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{graphicx}
+
+%\usetheme{singapore}
+
+\title{Sequencing Platform Comparison for Metabarcoding}
+\author{Zachary Foster}
+\date{\today}
+
+<<setup, include=FALSE>>=
+#R library imports
+library(knitr)
+library(xtable)
+# set global chunk options
+opts_chunk$set(fig.align='center', 
+               fig.show='asis', 
+               fig.lp="", 
+               error=FALSE, 
+               cach=FALSE, 
+               dpi=600, 
+               include=FALSE, 
+               echo=FALSE, 
+               tidy=TRUE, 
+               out.width=".9\\linewidth", 
+               fig.width = 8, 
+               external=FALSE, 
+               results='markup',
+               message=FALSE)
+#read_chunk('file name for code externalization')
+@
+
+\begin{document}
+
+\section{Introduction}
+\begin{frame}
+\maketitle
+\end{frame}
+
+\section{References}
+\begin{frame}{References}
+\bibliographystyle{plain}
+\bibliography{../library}
+\end{frame}
+
+
+\end{document}
