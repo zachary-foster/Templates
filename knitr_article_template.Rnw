@@ -6,7 +6,17 @@
 \usepackage{url}
 \usepackage{booktabs}
 \usepackage{graphicx}
+\usepackage[backend=bibtex]{biblatex}
 \usepackage[margin=2cm]{geometry}
+\usepackage[tight,TABTOPCAP]{subfigure}
+
+
+\def\referencepath{../../References/references.bib}
+\def\sectiontitle#1{\subsection*{\cite{#1}\citetitle{#1}\citeyear{#1}}}
+\def\dc#1{$#1\,^{\circ}\mathrm{C}$}
+\def\mycite#1{\citeauthor{#1} (\citeyear{#1})}
+
+\addbibresource{\referencepath}
 
 \def\referencepath{../../References/references.bib}
 \def\sectiontitle#1{\subsection*{\cite{#1}\citetitle{#1}\citeyear{#1}}}
@@ -45,7 +55,7 @@ opts_chunk$set(fig.align='center',
 \begin{document}
 \maketitle
 
-
+\printbibliography
 
 \printbibliography
 \end{document}
